@@ -60,11 +60,16 @@ export const initialState = {
 
 	// misc
 	soundEnabled: true,
-	congratulationMessage: null
+	congratulationMessage: null,
+	shake: false // change made
 };
 
 export default (state = initialState, action) => {
 	switch (action.type) {
+		case types.SHAKE:
+			return {
+				shake: true
+			}
 		case types.UPDATE_STATE:
 			return {
 				...state,
@@ -217,5 +222,6 @@ export const actions = {
 	updateBoxStatus: (box, status) => ({ type: types.UPDATE_BOX_STATUS, box, status }),
 	toggleSound: () => ({ type: types.TOGGLE_SOUND }),
 	addResult: (result) => ({ type: types.ADD_RESULT, result }),
-	updateCongratulationMessage: (message) => ({ type: types.UPDATE_CONGRATULATION_MESSAGE, message })
+	updateCongratulationMessage: (message) => ({ type: types.UPDATE_CONGRATULATION_MESSAGE, message }),
+	shakeHint: () => ({type: types.SHAKE}) // change made
 };

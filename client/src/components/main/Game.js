@@ -79,7 +79,7 @@ class Game extends Component {
 			if (data.soundEnabled) this.audio.play();
 
 			if (data.shake === true) {
-
+				handlers.shakeHint(); // change made - don't know what this does
 			}
 		}
 	}
