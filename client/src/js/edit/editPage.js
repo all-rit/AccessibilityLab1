@@ -67,11 +67,11 @@ export function setTextColor(picker) {
 
 export function setBackgroundColor(picker) {
     var bodyElements = document.getElementsByTagName('body');
-
     for (var i = 0; i < bodyElements.length; i++) {
+
         bodyElements[i].style.backgroundColor = picker.toString();
     }
-    var elems = document.querySelectorAll(".quiz, .result");
+    var elems = document.querySelectorAll(".quiz", ".result");
     var index = 0, length = elems.length;
     for (; index < length; index++) {
         if (elems[index] !== undefined) {

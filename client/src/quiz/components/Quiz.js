@@ -4,6 +4,11 @@ import Question from '../components/Question';
 import QuestionCount from '../components/QuestionCount';
 import AnswerOption from '../components/AnswerOption';
 
+const getBackgroundColor=()=>{
+    var bodyElements = document.getElementsByTagName('body');
+    return bodyElements[0].style.backgroundColor.toString()
+}
+
 function Quiz(props) {
     function renderAnswerOptions(key) {
         return (
@@ -19,9 +24,8 @@ function Quiz(props) {
         );
     }
 
-
     return (
-        <div className="quiz container shadow" key={props.questionId}>
+        <div className="quiz container shadow" key={props.questionId}  style={{backgroundColor: getBackgroundColor()}}>
             <QuestionCount counter={props.questionId} total={props.questionTotal}/>
             <Question content={props.question}/>
             <ul className="answerOptions">

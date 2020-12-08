@@ -88,12 +88,16 @@ function Result(props) {
 
     }
 
-
+    const getBackgroundColor=()=>{
+        var bodyElements = document.getElementsByTagName('body');
+        return bodyElements[0].style.backgroundColor.toString()
+    }
+    
 
     return (
 
-        <div className="quiz container shadow">
-            <div className="result">
+        <div className="quiz container shadow" style={{backgroundColor: getBackgroundColor()}}>
+            <div className="result" >
                 Results <strong>Score: {props.quizResult}</strong>
                 <br/>
                 <div>
