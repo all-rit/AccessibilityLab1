@@ -71,7 +71,7 @@ export function setBackgroundColor(picker) {
 
         bodyElements[i].style.backgroundColor = picker.toString();
     }
-    var elems = document.querySelectorAll(".quiz", ".result");
+    var elems = document.querySelectorAll(".quiz, .result");
     var index = 0, length = elems.length;
     for (; index < length; index++) {
         if (elems[index] !== undefined) {
@@ -80,4 +80,9 @@ export function setBackgroundColor(picker) {
 
     }
 
+}
+
+export const getBackgroundColor=()=>{
+    var bodyElements = document.getElementsByTagName('body');
+    return bodyElements[0].style.backgroundColor.toString()
 }

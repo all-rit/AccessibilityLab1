@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import quizQuestions from "../api/quizQuestions";
 import Certificate from "./Certificate";
+import {getBackgroundColor} from "../../js/edit/editPage";
 
 function Result(props) {
 
@@ -87,12 +88,6 @@ function Result(props) {
         )
 
     }
-
-    const getBackgroundColor=()=>{
-        var bodyElements = document.getElementsByTagName('body');
-        return bodyElements[0].style.backgroundColor.toString()
-    }
-    
 
     return (
 

@@ -3,11 +3,7 @@ import PropTypes from 'prop-types';
 import Question from '../components/Question';
 import QuestionCount from '../components/QuestionCount';
 import AnswerOption from '../components/AnswerOption';
-
-const getBackgroundColor=()=>{
-    var bodyElements = document.getElementsByTagName('body');
-    return bodyElements[0].style.backgroundColor.toString()
-}
+import {getBackgroundColor} from "../../js/edit/editPage";
 
 function Quiz(props) {
     function renderAnswerOptions(key) {
