@@ -16,7 +16,6 @@ jobs:
         USERNAME: all
         PORT: 22
         KEY: ${{ secrets.SSH_SECRET }}
-        PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }} 
         source: "."
         target: "/home/all/research/AccessibilityLab1/"
     - name: Executing remote command
@@ -25,7 +24,6 @@ jobs:
         host: all.rit.edu
         USERNAME: all
         KEY: ${{ secrets.SSH_SECRET }}
-        PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }} 
         PORT: 22
         script: |
           cd research
