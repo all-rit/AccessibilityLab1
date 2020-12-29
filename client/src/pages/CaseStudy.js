@@ -45,7 +45,7 @@ class CaseStudy extends Component {
 					was established in 1998. This section outlines all of the necessary components of web infrastructure
 					to keep its promise to ensure applications are accessible to all.{' '}
 					<a
-						href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/iii-major-issues"
+						href="https://www.access-board.gov/ict/#subpart_c"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -164,7 +164,7 @@ class CaseStudy extends Component {
 					our applications, and we are not protecting the rights of these individuals to be able to access the
 					internet the same as everyone else. {' '}
 					<a
-						href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/iii-major-issues"
+						href="https://www.access-board.gov/ict/#subpart_c"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
