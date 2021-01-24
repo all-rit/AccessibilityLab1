@@ -13,7 +13,6 @@ import {actions as appActions} from './reducers/AppReducer';
 import {bindActionCreators} from 'redux';
 import {connect} from "react-redux";
 
-
 export const Sections = [
   {
     name: "About",
